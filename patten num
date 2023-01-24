@@ -1,0 +1,26 @@
+/* output
+1 
+2 7 
+3 8 12 
+4 9 13 16 
+5 10 14 17 19 
+6 11 15 18 20 21 
+*/
+
+public class patten1 {
+	public static void main(String[] args) {
+		int n = 6;
+		int a =1;
+		int v = 5;
+		for (int i =1; i <=n; i++) {
+			a=i;
+			for (int j = 1; j <=i; j++) {
+					System.out.print(a+" ");
+					a+=v;
+					v--;
+			}
+			v=5;
+			System.out.println();
+		}
+	}
+}
